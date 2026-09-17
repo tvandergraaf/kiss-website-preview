@@ -1,10 +1,10 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Disallow: /contact/bedankt/
-Disallow: /solliciteren/
-Disallow: /solliciteren/bedankt/
 Disallow: /*?fout=
 Disallow: /*?error=
+
+# /solliciteren/ en de bedankpagina's zijn bewust noindex via meta robots en X-Robots-Tag.
+# Crawlen blijft toegestaan, anders kan een crawler die noindex niet lezen.
 
 Sitemap: https://kiss-marketingsales.nl/sitemap.xml
