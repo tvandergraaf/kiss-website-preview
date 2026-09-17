@@ -7,10 +7,10 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://kiss-marketingsales.nl/b2c-sales-uitbesteden/</loc>
+    <loc>https://kiss-marketingsales.nl/b2c-sales/</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://kiss-marketingsales.nl/cases/</loc>
@@ -49,36 +49,6 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://kiss-marketingsales.nl/diensten/</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kiss-marketingsales.nl/diensten/cross-sell-upsell/</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kiss-marketingsales.nl/diensten/leadopvolging/</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kiss-marketingsales.nl/diensten/outbound-sales/</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://kiss-marketingsales.nl/diensten/retentie-klantbehoud/</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://kiss-marketingsales.nl/kennis/</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -109,6 +79,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://kiss-marketingsales.nl/leadopvolging/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kiss-marketingsales.nl/over-kiss/</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -119,6 +95,12 @@
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://kiss-marketingsales.nl/retentie/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kiss-marketingsales.nl/sectoren/</loc>
