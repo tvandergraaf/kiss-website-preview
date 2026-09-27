@@ -155,16 +155,12 @@ html.intro-on.intro-skip .c-intro-film{animation:intro-out 150ms linear 0s forwa
 .u-2col>*{grid-column:2;min-width:0}
 .u-2col>:first-child{grid-column:1;grid-row:1 / span 40;margin:0;position:sticky;top:calc(var(--header-h) + var(--space-6))}
 .u-2col>:nth-child(2){margin-top:0}}
-.u-2col>:first-child h2,.u-2col>h2:first-child{font-size:min(var(--text-h2),2.25rem)}
-@media (min-width:75em){.u-2col>:first-child h2,.u-2col>h2:first-child{font-size:2.25rem}}
 /* D-20 kop cases op desktop: "Twee samenwerkingen" op één regel */
 @media (min-width:64em){.u-fit-h1-883{font-size:min(var(--text-h1),calc((min(100vw - 2*var(--gutter),var(--container)) - var(--space-8))*7/12/11.6))}}
 /* D-25 trustbar met vier punten op één regel */
 @media (min-width:64em){.c-trustbar__list:has(>li:nth-child(4)){display:grid;grid-template-columns:repeat(4,auto);justify-content:start;column-gap:var(--space-6)}}
 /* checklist in gecentreerde blokken links uitgelijnd */
 .c-centered .c-checklist{text-align:start;margin-inline:auto}
-/* weeskinderen in koppen: woordpaar past op mobiel */
-@media (max-width:39.99em){.u-fit-h2-o1144{font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/11.44))}.u-fit-h1-o841{font-size:min(var(--text-h1),calc((100vw - 2*var(--gutter))/8.41))}.u-fit-h2-o1192{font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/11.92))}.u-fit-h2-o1328{font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/13.28))}.u-fit-h2-o1328{font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/13.28))}.u-fit-h1-o1003{font-size:min(var(--text-h1),calc((100vw - 2*var(--gutter))/10.04))}.u-fit-h2-o1258{font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/12.58))}.u-fit-h1-o924{font-size:min(var(--text-h1),calc((100vw - 2*var(--gutter))/9.24))}.u-fit-h2-o1173{font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/11.73))}.u-fit-h3-o1739{font-size:min(var(--text-h3),calc((100vw - 2*var(--gutter))/17.4))}}
 /* ===== QA 27-09 ronde 3 ===== */
 /* 1. actieve ouder in de navigatie: dezelfde lijn */
 .c-nav__link[aria-current="true"],.c-nav__link.is-active{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:6px}
@@ -186,10 +182,6 @@ html.menu-open .c-sticky-cta{display:none}
 /* 6. e-mail, kruimelpad */
 a.u-mail{white-space:nowrap;overflow-wrap:normal}
 @media (min-width:64em){.c-footer__grid{grid-template-columns:1.25fr 1fr .9fr 1.35fr}}
-@media (max-width:39.99em){.c-breadcrumb ol{flex-wrap:nowrap;min-width:0}
-.c-breadcrumb li{flex:none;min-width:0}
-.c-breadcrumb li:last-child{flex:0 1 auto;overflow:hidden}
-.c-breadcrumb li:last-child>*{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
 /* 7. cookiebanner-knoppen op één regel; werken-bij hero-punten 2x2 */
 .c-consent__actions .btn{white-space:nowrap}
 @media (min-width:64em){.c-consent__inner{max-width:27rem}}
@@ -202,31 +194,18 @@ a.u-mail{white-space:nowrap;overflow-wrap:normal}
 .c-people figcaption{overflow-wrap:break-word}
 @media (max-width:39.99em){.c-people{grid-template-columns:1fr}}
 @media (min-width:30em){.c-hero .c-trustbar__list:has(>li),.c-hero .c-trustbar__list:has(>li:nth-child(4)){display:grid;grid-template-columns:repeat(2,max-content);gap:var(--space-2) var(--space-6)}}
-/* korte zinnen in koppen op één regel */
-h1:has(>.u-sent),h2:has(>.u-sent){container-type:inline-size}
-.u-sf-1154>.u-sent{font-size:clamp(.8em,calc(100cqi / 11.54),1em)}
-.u-sf-1204>.u-sent{font-size:clamp(.8em,calc(100cqi / 12.04),1em)}
-.u-sf-1914>.u-sent{font-size:clamp(.8em,calc(100cqi / 19.15),1em)}
-.u-sf-1164>.u-sent{font-size:clamp(.8em,calc(100cqi / 11.64),1em)}
-.u-sf-1132>.u-sent{font-size:clamp(.8em,calc(100cqi / 11.32),1em)}
-.u-sf-585>.u-sent{font-size:clamp(.8em,calc(100cqi / 5.85),1em)}
-.u-sf-1434>.u-sent{font-size:clamp(.8em,calc(100cqi / 14.34),1em)}
-.u-sf-676>.u-sent{font-size:clamp(.8em,calc(100cqi / 6.76),1em)}
-.u-sf-602>.u-sent{font-size:clamp(.8em,calc(100cqi / 6.02),1em)}
-.u-sf-1572>.u-sent{font-size:clamp(.8em,calc(100cqi / 15.72),1em)}
-.u-sf-533>.u-sent{font-size:clamp(.8em,calc(100cqi / 5.33),1em)}
-.u-sf-1371>.u-sent{font-size:clamp(.8em,calc(100cqi / 13.71),1em)}
-.u-sf-1077>.u-sent{font-size:clamp(.8em,calc(100cqi / 10.77),1em)}
-.u-sf-1855>.u-sent{font-size:clamp(.8em,calc(100cqi / 18.56),1em)}
-.u-sf-1263>.u-sent{font-size:clamp(.8em,calc(100cqi / 12.63),1em)}
-.u-sf-1239>.u-sent{font-size:clamp(.8em,calc(100cqi / 12.39),1em)}
-.u-sf-1158>.u-sent{font-size:clamp(.8em,calc(100cqi / 11.58),1em)}
-.u-sf-1728>.u-sent{font-size:clamp(.8em,calc(100cqi / 17.28),1em)}
-.u-sf-626>.u-sent{font-size:clamp(.8em,calc(100cqi / 6.26),1em)}
-.u-sf-1741>.u-sent{font-size:clamp(.8em,calc(100cqi / 17.41),1em)}
-.u-sf-1032>.u-sent{font-size:clamp(.8em,calc(100cqi / 10.32),1em)}
-.u-sf-800>.u-sent{font-size:clamp(.8em,calc(100cqi / 8),1em)}
-.u-sf-1516>.u-sent{font-size:clamp(.8em,calc(100cqi / 15.16),1em)}
-.u-sf-352>.u-sent{font-size:clamp(.8em,calc(100cqi / 3.52),1em)}
-.u-sf-808>.u-sent{font-size:clamp(.8em,calc(100cqi / 8.08),1em)}
-.u-sf-767>.u-sent{font-size:clamp(.8em,calc(100cqi / 7.67),1em)}
+/* ===== QA 27-09 ronde 4 ===== */
+/* 5. tekstlinks lopen mee in de regel, zodat "&nbsp;·" aan de vorige link blijft hangen */
+.link{display:inline;padding-block:2px}
+/* 4. kruimelpad op mobiel: alleen "← ouderpagina" */
+@media (max-width:39.99em){.c-breadcrumb li{display:none}
+.c-breadcrumb li:nth-last-child(2){display:inline-flex}
+.c-breadcrumb li:nth-last-child(2)::before{content:"\2190";color:var(--muted)}
+.c-breadcrumb li:nth-last-child(2) a{display:inline-block;padding-block:10px;margin-block:-10px}}
+/* 3. één koppenmaat: inhoudsopgave-kop in artikelen gelijk aan de andere artikelkoppen; contactkoppen gewone H2 */
+#inhoud-titel{font-size:var(--text-h3)}
+#formulier h2,.c-form__title{font-size:var(--text-h2)}
+.link--arrow::after,.c-card .c-card__more::after{content:"\00a0\2192"}
+@media (max-width:39.99em){.c-breadcrumb li:nth-last-child(2){white-space:nowrap}}
+/* één koppenmaat per niveau per pagina op mobiel */
+@media (max-width:39.99em){.u-pf-h2-1144 h2:not(.c-refbar__title):not(.c-toc h2){font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/11.44))}.u-pf-h1-841 h1{font-size:min(var(--text-h1),calc((100vw - 2*var(--gutter))/8.41))}.u-pf-h2-1192 h2:not(.c-refbar__title):not(.c-toc h2){font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/11.92))}.u-pf-h2-1328 h2:not(.c-refbar__title):not(.c-toc h2){font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/13.28))}.u-pf-h3-1739 .c-features h3{font-size:min(var(--text-h4),calc((100vw - 2*var(--gutter))/17.4))}.u-pf-h2-1258 h2:not(.c-refbar__title):not(.c-toc h2){font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/12.58))}.u-pf-h1-1033 h1{font-size:min(var(--text-h1),calc((100vw - 2*var(--gutter))/10.33))}.u-pf-h1-924 h1{font-size:min(var(--text-h1),calc((100vw - 2*var(--gutter))/9.24))}.u-pf-h2-1173 h2:not(.c-refbar__title):not(.c-toc h2){font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/11.73))}.u-pf-h1-1154 h1{font-size:min(var(--text-h1),calc((100vw - 2*var(--gutter))/11.54))}.u-pf-h2-1180 h2:not(.c-refbar__title):not(.c-toc h2){font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/11.8))}.u-pf-h1-802 h1{font-size:min(var(--text-h1),calc((100vw - 2*var(--gutter))/8.02))}.u-pf-h1-894 h1{font-size:min(var(--text-h1),calc((100vw - 2*var(--gutter))/8.95))}}

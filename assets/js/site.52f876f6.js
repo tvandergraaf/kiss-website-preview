@@ -13,8 +13,8 @@ Array.prototype.forEach.call(d.querySelectorAll('.c-file__input'),function(i){va
 })();
 (function(){'use strict';var d=document,sc=d.querySelector('.c-sticky-cta');if(!sc)return;
 /* M4: sollicitatiebalk niet naast een zichtbare hero-knop, niet over het formulier, niet tijdens invullen */
-var hero=d.querySelector('main .c-hero .btn'),form=d.getElementById('solliciteren'),v={hero:false,form:false};
-var upd=function(){var a=d.activeElement,busy=!!(a&&a.closest&&a.closest('form:not(.c-consent__form)'));sc.classList.toggle('is-hidden',v.hero||v.form||busy);};
+var hero=d.querySelector('main .c-hero .btn'),form=d.getElementById('solliciteren'),ends=Array.prototype.slice.call(d.querySelectorAll('main .c-cta, .c-footer')),v={hero:false,form:false,end:{}};
+var upd=function(){var a=d.activeElement,busy=!!(a&&a.closest&&a.closest('form:not(.c-consent__form)')),end=false;for(var k in v.end)if(v.end[k])end=true;sc.classList.toggle('is-hidden',v.hero||v.form||end||busy);};
 sc.classList.add('is-hidden');
-if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.target===hero)v.hero=e.isIntersecting;else v.form=e.isIntersecting;});upd();});if(hero)io.observe(hero);if(form)io.observe(form);}else{sc.classList.remove('is-hidden');}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.target===hero)v.hero=e.isIntersecting;else if(e.target===form)v.form=e.isIntersecting;else v.end[ends.indexOf(e.target)]=e.isIntersecting;});upd();});if(hero)io.observe(hero);if(form)io.observe(form);ends.forEach(function(x){io.observe(x);});}else{sc.classList.remove('is-hidden');}
 d.addEventListener('focusin',upd);d.addEventListener('focusout',function(){setTimeout(upd,0);});})();
