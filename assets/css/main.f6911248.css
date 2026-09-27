@@ -5,3 +5,228 @@
 @media (max-width:39.99em){h1,h2,h3,h4,th,.lead,.btn,button,[class*=eyebrow]{hyphens:manual;-webkit-hyphens:manual}
 .c-hero__title--fit{font-size:min(var(--text-display),calc((100vw - 2*var(--gutter))/9.4))}}
 @media (max-width:39.99em){.u-fit-h1-1000{font-size:min(var(--text-h1),calc((100vw - 2*var(--gutter))/10))}.u-fit-h1-1157{font-size:min(var(--text-h1),calc((100vw - 2*var(--gutter))/11.57))}.u-fit-h1-883{font-size:min(var(--text-h1),calc((100vw - 2*var(--gutter))/8.83))}.u-fit-h1-890{font-size:min(var(--text-h1),calc((100vw - 2*var(--gutter))/8.9))}.u-fit-h2-1145{font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/11.45))}}
+
+/* QA 27-09 reparaties */
+/* C: flex-contexten met gemengde tekst: geen verloren of dubbele spaties */
+.c-footer a{display:inline-block}
+.c-footer__address a{display:inline}
+.c-checklist li{display:block;position:relative;padding-left:1.75rem}
+.c-checklist li::before{position:absolute;left:4px;top:calc(var(--space-2) + .3em);margin:0}
+.c-linklist a{display:block;text-align:center;padding-block:.75rem;line-height:1.5}
+/* C: lange woorden in koppen breken niet midden in het woord */
+h1,h2,h3,h4{overflow-wrap:normal}
+@media (max-width:39.99em){h1,h2,h3,h4{overflow-wrap:break-word}}
+@media (min-width:40em){.u-fit-h1-1157{font-size:min(var(--text-h1),calc(min(100vw - 2*var(--gutter),var(--container))/12.2))}
+.u-fit-h1-1000{font-size:min(var(--text-h1),calc(min(100vw - 2*var(--gutter),var(--container))/10.6))}}
+@media (min-width:64em){.u-fit-h1-1157{font-size:min(var(--text-h1),calc((min(100vw - 2*var(--gutter),var(--container)) - var(--space-8))*7/12/12.2))}
+.u-fit-h1-1000{font-size:min(var(--text-h1),calc((min(100vw - 2*var(--gutter),var(--container)) - var(--space-8))*7/12/10.6))}}
+.c-subnav__desc{text-wrap:balance}
+@media (min-width:64em){.c-subnav{width:25rem}}
+/* D-04 stappen: koppen bovenaan uitlijnen */
+.c-steps>li{align-content:start}
+.c-steps h3{align-self:start}
+/* D-09 selects even hoog, rij bovenaan uitgelijnd */
+.c-form__row{align-items:start}
+.c-field select.c-input{height:var(--input-h);align-self:start}
+/* D-10 bedanktpagina: lijst links uitgelijnd in een gecentreerd blok */
+.c-centered .c-prose{max-width:34rem;margin-inline:auto;margin-top:var(--space-5);text-align:start}
+.c-centered .c-prose ol{padding-left:1.5em}
+/* D-18/M-04 cases: lucht tussen subkoppen en inhoud */
+.section h3 + p.measure{margin-top:var(--space-3)}
+.section h3 + .c-features{margin-top:var(--space-5)}
+.section p.measure + .c-features{margin-top:var(--space-6)}
+.c-features h4{margin-bottom:var(--space-2)}
+/* D-19 losse casekaart */
+.c-cards--1{grid-template-columns:minmax(0,1fr);max-width:44rem}
+/* D-03 sectorkaarten op tablet: één kolom, beeld naast tekst */
+@media (min-width:40em) and (max-width:63.99em){.c-cards--3:has(>.c-sector-card){grid-template-columns:1fr}
+.c-sector-card{display:grid;grid-template-columns:2fr 3fr;column-gap:var(--space-5);align-content:start}
+.c-sector-card>*{grid-column:2}
+.c-sector-card>img{grid-column:1;grid-row:1 / span 5;margin:0}}
+/* M-15/D-24 kaartlinks herkenbaar */
+.c-card .c-card__more{color:var(--accent-text);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.c-card .c-card__more::after{content:" \2192"}
+.c-card:hover .c-card__more{text-decoration-thickness:2px}
+/* D-08/M-05 ISO-badge als tekstbadge */
+.c-iso-badge{display:inline-flex;flex-direction:column;justify-content:center;gap:2px;padding:.5rem .875rem;border:1px solid var(--border-strong);border-radius:var(--radius-md);background:var(--bg);color:var(--text);line-height:1.15;text-decoration:none;max-width:none}
+.c-iso-badge__std{font-weight:800;font-size:1rem;letter-spacing:-.01em;white-space:nowrap}
+.c-iso-badge__txt{font-size:.75rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.c-iso-badge--lg{padding:1rem 1.5rem}
+.c-iso-badge--lg .c-iso-badge__std{font-size:1.5rem}
+.c-iso-badge--lg .c-iso-badge__txt{font-size:.875rem}
+.c-footer a.c-footer__iso{display:inline-block;align-self:flex-start;padding:0}
+.c-footer a.c-footer__iso:hover .c-iso-badge{border-color:var(--accent)}
+/* M-08 contact: formulier heeft een eigen kop en vlak */
+.c-form__title{font-size:var(--text-h3);margin-bottom:var(--space-5)}
+#formulier .split>div{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-md);padding:var(--space-5)}
+@media (min-width:40em){#formulier .split>div{padding:var(--space-6)}}
+/* hero: secundaire formulierregel */
+.c-cta-alt{margin-top:var(--space-4)}
+/* M-09 gestapelde tabellen: eerste kolom als kop */
+@media (max-width:39.99em){.c-compare--stack caption{margin-bottom:var(--space-2)}}
+/* D-14 menu op tablet dekt het scherm af; pagina scrolt niet mee */
+@media (max-width:63.99em){.js .c-header__menu.is-open{min-height:calc(100dvh - var(--header-h))}
+.c-header__tel{color:var(--accent-text);text-decoration:underline;text-underline-offset:3px}
+html.menu-open{overflow:hidden}}
+/* D-15 header 1024: Werken bij visueel los van de hoofdnavigatie */
+@media (min-width:64em){.c-header__secondary{padding-left:var(--space-4);border-left:1px solid var(--border)}}
+@media (min-width:64em) and (max-width:74.99em){.c-header__menu,.js .c-header__menu:not(.is-open){gap:var(--space-3)}
+.c-nav__list{gap:var(--space-3)}
+.c-nav__link,.c-header__secondary{font-size:.875rem}}
+/* D-22 focusring binnen de header */
+@media (min-width:64em){.c-nav__link{position:relative}
+.c-nav__link:focus-visible{outline:none}
+.c-nav__link:focus-visible::after{content:"";position:absolute;inset:calc(50% - 1.05em) -6px;border:3px solid var(--focus);border-radius:var(--radius-sm)}
+.c-nav__subtoggle:focus-visible{outline-offset:0}}
+/* D-28/M-12 cookiebanner */
+@media (min-width:64em){.c-consent__inner{max-width:380px}}
+@media (max-width:24.99em){.c-consent__actions .btn{flex:1 1 100%}}
+.c-consent__actions [data-consent="save"]:not([hidden]){order:-1;flex:1 1 100%}
+/* D-29 referentiebalk links uitgelijnd */
+.c-refbar__title{text-align:start}
+.c-refbar__list{justify-content:flex-start}
+/* D-30 knop-als-link in lopende tekst neemt de tekstgrootte over */
+main .c-consent__link{font:inherit;font-weight:500}
+/* M-19 tikdoelen */
+.c-sticky-cta .btn{min-height:var(--target-min)}
+body:has(.c-sticky-cta){padding-bottom:60px}
+@media (min-width:64em){body:has(.c-sticky-cta){padding-bottom:0}}
+.c-choice label a,main p a[href^="tel:"],main li a[href^="tel:"]{padding-block:4px}
+/* D-20 weeskinderen: woordpaar alleen vanaf tablet bij elkaar houden */
+@media (min-width:40em){.u-nowrap-md{white-space:nowrap}}
+/* M-19 contactlinks in adresblokken */
+address a{padding-block:4px}
+/* D-10 lijstnummers zonder gat voor de punt */
+ol>li::marker{font-variant-numeric:proportional-nums}
+/* M-08 contact: beide koppen in het contactvlak even zwaar */
+#formulier h2{font-size:var(--text-h3)}
+/* ===== QA 27-09 ronde 2 ===== */
+/* M-06 sticky header, ook op mobiel; verbergt bij omlaag scrollen */
+html{scroll-padding-top:calc(var(--header-h) + 1rem)}
+.c-header{position:sticky;top:0;transition:transform var(--dur) var(--ease)}
+@media (max-width:63.99em){.c-header.is-hidden{transform:translateY(-100%)}}
+@media (prefers-reduced-motion:reduce){.c-header{transition:none}}
+/* M-20 menu: Kennis erbij, Werken bij niet grijs */
+.c-header__extra{order:1;font-weight:500;color:var(--brand);text-decoration:none;min-height:var(--target-min);display:inline-flex;align-items:center}
+@media (max-width:63.99em){.c-header__secondary{color:var(--brand)}}
+@media (min-width:64em){.c-header__extra{display:none}}
+/* M-11/D-16 intro: totaal ca. 1,15 s, tekst verdwijnt vóór de overlay */
+html.intro-on .c-intro-film{animation:intro-out 300ms var(--ease) .85s forwards}
+html.intro-on .c-intro-film p{filter:blur(6px);animation:intro-in 420ms cubic-bezier(.2,.7,.2,1) 0s forwards,intro-text-out 150ms ease .7s forwards}
+html.intro-on .c-intro-film__sub{animation-delay:.12s,.7s}
+html.intro-on .c-intro-film__claim{animation-delay:.24s,.7s}
+html.intro-on.intro-skip .c-intro-film{animation:intro-out 150ms linear 0s forwards}
+@keyframes intro-text-out{to{opacity:0}}
+/* M-10 inhoudsopgave en checklistgroepen */
+.c-toc{border-bottom:1px solid var(--border);padding-block:var(--space-4);background:var(--bg)}
+.c-toc__title{font-size:var(--text-eyebrow);text-transform:uppercase;letter-spacing:.08em;color:var(--subtle);font-weight:500;margin-bottom:var(--space-1)}
+.c-toc__list{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:0 var(--space-5)}
+.c-toc__list a{display:inline-flex;align-items:center;min-height:var(--target-min);font-weight:500}
+.c-faq--wide{max-width:none;margin-top:var(--space-5)}
+.c-group summary h3{flex:1}
+.c-group__count{font-size:var(--text-small);color:var(--muted);white-space:nowrap}
+.c-faq details>.c-compare{color:inherit;margin-top:0;padding-block:0 var(--space-5)}
+/* D-23 tabellen: vaste kolomverdeling, grijze kolom alleen waar betekenisvol */
+@media (min-width:64em){.c-group .c-compare--stack table{table-layout:fixed}.c-group .c-compare--stack thead th:first-child{width:28%}}
+.c-compare--plain td:last-child,.c-compare--plain th:last-child{background:none}
+/* M-16 trustbar met vinkjes */
+.c-trustbar__list li{position:relative;padding-left:1.5rem}
+.c-trustbar__list li::before{content:"";position:absolute;left:3px;top:.15em;width:6px;height:11px;border:solid var(--success);border-width:0 2px 2px 0;transform:rotate(45deg)}
+@media (min-width:40em) and (max-width:63.99em){.c-trustbar__list:has(>li:nth-child(3):last-child){grid-template-columns:repeat(3,1fr)}}
+/* D-25 onvolledige rijen */
+@media (min-width:64em){.c-features:has(>li:nth-child(4):last-child){grid-template-columns:repeat(2,1fr)}
+.c-people:has(>li:nth-child(8):last-child){grid-template-columns:repeat(4,1fr)}
+.auto-grid:has(>.c-quote:nth-child(5):last-child){display:flex;flex-wrap:wrap;justify-content:center}
+.auto-grid:has(>.c-quote:nth-child(5):last-child)>*{flex:0 1 calc((100% - 2 * var(--grid-gap)) / 3)}}
+/* M-18/D-25 één persoonkaart: horizontaal */
+.c-people:has(>li:only-child){grid-template-columns:minmax(0,32rem)}
+.c-people>li:only-child figure{display:grid;grid-template-columns:7.5rem 1fr;gap:var(--space-4);align-items:center}
+.c-people>li:only-child figcaption{margin-top:0}
+/* D-27 twee witte secties achter elkaar: geen dubbele witruimte */
+.section:not(.section--surface):not([data-theme]) + .section:not(.section--surface):not([data-theme]){padding-top:0}
+/* M-18 bestandsveld */
+.c-file{position:relative;display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-3)}
+.c-field .c-file__input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.c-file__name{font-size:var(--text-small);color:var(--muted)}
+.c-file__input:focus-visible + .c-file__btn{outline:3px solid var(--focus);outline-offset:3px}
+.c-file__input:hover + .c-file__btn{background:var(--surface)}
+/* D-17 tekstsecties op brede schermen: kop links, tekst rechts */
+@media (min-width:75em){.section>.container.u-2col{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);column-gap:var(--space-8);align-items:start}
+.u-2col>*{grid-column:2;min-width:0}
+.u-2col>:first-child{grid-column:1;grid-row:1 / span 40;margin:0;position:sticky;top:calc(var(--header-h) + var(--space-6))}
+.u-2col>:nth-child(2){margin-top:0}}
+.u-2col>:first-child h2,.u-2col>h2:first-child{font-size:min(var(--text-h2),2.25rem)}
+@media (min-width:75em){.u-2col>:first-child h2,.u-2col>h2:first-child{font-size:2.25rem}}
+/* D-20 kop cases op desktop: "Twee samenwerkingen" op één regel */
+@media (min-width:64em){.u-fit-h1-883{font-size:min(var(--text-h1),calc((min(100vw - 2*var(--gutter),var(--container)) - var(--space-8))*7/12/11.6))}}
+/* D-25 trustbar met vier punten op één regel */
+@media (min-width:64em){.c-trustbar__list:has(>li:nth-child(4)){display:grid;grid-template-columns:repeat(4,auto);justify-content:start;column-gap:var(--space-6)}}
+/* checklist in gecentreerde blokken links uitgelijnd */
+.c-centered .c-checklist{text-align:start;margin-inline:auto}
+/* weeskinderen in koppen: woordpaar past op mobiel */
+@media (max-width:39.99em){.u-fit-h2-o1144{font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/11.44))}.u-fit-h1-o841{font-size:min(var(--text-h1),calc((100vw - 2*var(--gutter))/8.41))}.u-fit-h2-o1192{font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/11.92))}.u-fit-h2-o1328{font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/13.28))}.u-fit-h2-o1328{font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/13.28))}.u-fit-h1-o1003{font-size:min(var(--text-h1),calc((100vw - 2*var(--gutter))/10.04))}.u-fit-h2-o1258{font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/12.58))}.u-fit-h1-o924{font-size:min(var(--text-h1),calc((100vw - 2*var(--gutter))/9.24))}.u-fit-h2-o1173{font-size:min(var(--text-h2),calc((100vw - 2*var(--gutter))/11.73))}.u-fit-h3-o1739{font-size:min(var(--text-h3),calc((100vw - 2*var(--gutter))/17.4))}}
+/* ===== QA 27-09 ronde 3 ===== */
+/* 1. actieve ouder in de navigatie: dezelfde lijn */
+.c-nav__link[aria-current="true"],.c-nav__link.is-active{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:6px}
+/* 2. header 1024–1440: Kennis erbij zonder overlopen */
+@media (min-width:64em) and (max-width:79.99em){.c-nav__list{gap:var(--space-3)}.c-header__menu,.js .c-header__menu:not(.is-open){gap:var(--space-3);margin-left:var(--space-3)}.c-header__actions{gap:var(--space-3)}.c-nav__link,.c-header__secondary{font-size:.8125rem}.js .c-nav__subtoggle{width:24px}}
+@media (min-width:64em) and (max-width:69.99em){.c-header__logo img{height:22px}.c-header__cta .icon{display:none}}
+/* 3. teamkaarten zonder fotovak zolang er geen portretten zijn */
+.c-people img[data-placeholder]{display:none}
+.c-people figure{border:1px solid var(--border);border-radius:var(--radius-md);padding:var(--space-4) var(--space-5);background:var(--bg);height:100%}
+.c-people figcaption{margin-top:0}
+.c-people>li:only-child figure{display:block}
+@media (min-width:64em){.c-people:has(>li:nth-child(8):last-child){grid-template-columns:repeat(4,1fr)}}
+/* 4. sollicitatiebalk */
+.c-sticky-cta{transition:transform var(--dur) var(--ease),visibility var(--dur)}
+.c-sticky-cta.is-hidden{transform:translateY(110%);visibility:hidden}
+html.menu-open .c-sticky-cta{display:none}
+/* 5. koppen: per zin een blok, zodat een kop tussen zinnen breekt */
+.u-sent{display:inline-block}
+/* 6. e-mail, kruimelpad */
+a.u-mail{white-space:nowrap;overflow-wrap:normal}
+@media (min-width:64em){.c-footer__grid{grid-template-columns:1.25fr 1fr .9fr 1.35fr}}
+@media (max-width:39.99em){.c-breadcrumb ol{flex-wrap:nowrap;min-width:0}
+.c-breadcrumb li{flex:none;min-width:0}
+.c-breadcrumb li:last-child{flex:0 1 auto;overflow:hidden}
+.c-breadcrumb li:last-child>*{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
+/* 7. cookiebanner-knoppen op één regel; werken-bij hero-punten 2x2 */
+.c-consent__actions .btn{white-space:nowrap}
+@media (min-width:64em){.c-consent__inner{max-width:27rem}}
+@media (max-width:22.49em){.c-consent__actions .btn{flex:1 1 100%}}
+.c-hero .c-trustbar__list{display:grid;grid-template-columns:1fr;gap:var(--space-2) var(--space-5)}
+@media (min-width:30em){.c-hero .c-trustbar__list{grid-template-columns:repeat(2,minmax(0,max-content))}}
+.c-consent__actions .btn{min-height:var(--target-min)}
+.c-header__logo{min-height:var(--target-min)}
+.c-people>li{min-width:0}
+.c-people figcaption{overflow-wrap:break-word}
+@media (max-width:39.99em){.c-people{grid-template-columns:1fr}}
+@media (min-width:30em){.c-hero .c-trustbar__list:has(>li),.c-hero .c-trustbar__list:has(>li:nth-child(4)){display:grid;grid-template-columns:repeat(2,max-content);gap:var(--space-2) var(--space-6)}}
+/* korte zinnen in koppen op één regel */
+h1:has(>.u-sent),h2:has(>.u-sent){container-type:inline-size}
+.u-sf-1154>.u-sent{font-size:clamp(.8em,calc(100cqi / 11.54),1em)}
+.u-sf-1204>.u-sent{font-size:clamp(.8em,calc(100cqi / 12.04),1em)}
+.u-sf-1914>.u-sent{font-size:clamp(.8em,calc(100cqi / 19.15),1em)}
+.u-sf-1164>.u-sent{font-size:clamp(.8em,calc(100cqi / 11.64),1em)}
+.u-sf-1132>.u-sent{font-size:clamp(.8em,calc(100cqi / 11.32),1em)}
+.u-sf-585>.u-sent{font-size:clamp(.8em,calc(100cqi / 5.85),1em)}
+.u-sf-1434>.u-sent{font-size:clamp(.8em,calc(100cqi / 14.34),1em)}
+.u-sf-676>.u-sent{font-size:clamp(.8em,calc(100cqi / 6.76),1em)}
+.u-sf-602>.u-sent{font-size:clamp(.8em,calc(100cqi / 6.02),1em)}
+.u-sf-1572>.u-sent{font-size:clamp(.8em,calc(100cqi / 15.72),1em)}
+.u-sf-533>.u-sent{font-size:clamp(.8em,calc(100cqi / 5.33),1em)}
+.u-sf-1371>.u-sent{font-size:clamp(.8em,calc(100cqi / 13.71),1em)}
+.u-sf-1077>.u-sent{font-size:clamp(.8em,calc(100cqi / 10.77),1em)}
+.u-sf-1855>.u-sent{font-size:clamp(.8em,calc(100cqi / 18.56),1em)}
+.u-sf-1263>.u-sent{font-size:clamp(.8em,calc(100cqi / 12.63),1em)}
+.u-sf-1239>.u-sent{font-size:clamp(.8em,calc(100cqi / 12.39),1em)}
+.u-sf-1158>.u-sent{font-size:clamp(.8em,calc(100cqi / 11.58),1em)}
+.u-sf-1728>.u-sent{font-size:clamp(.8em,calc(100cqi / 17.28),1em)}
+.u-sf-626>.u-sent{font-size:clamp(.8em,calc(100cqi / 6.26),1em)}
+.u-sf-1741>.u-sent{font-size:clamp(.8em,calc(100cqi / 17.41),1em)}
+.u-sf-1032>.u-sent{font-size:clamp(.8em,calc(100cqi / 10.32),1em)}
+.u-sf-800>.u-sent{font-size:clamp(.8em,calc(100cqi / 8),1em)}
+.u-sf-1516>.u-sent{font-size:clamp(.8em,calc(100cqi / 15.16),1em)}
+.u-sf-352>.u-sent{font-size:clamp(.8em,calc(100cqi / 3.52),1em)}
+.u-sf-808>.u-sent{font-size:clamp(.8em,calc(100cqi / 8.08),1em)}
+.u-sf-767>.u-sent{font-size:clamp(.8em,calc(100cqi / 7.67),1em)}
