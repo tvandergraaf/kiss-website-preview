@@ -68,7 +68,6 @@
         <div class="btn-group">
           <a class="btn btn--recruit" href="#solliciteren" data-event="rec_cta_click" data-location="hero">Solliciteer in 1 minuut</a>
           <a class="btn btn--secondary btn--whatsapp" href="https://wa.me/31613702654?text=Hoi%21%20Ik%20heb%20interesse%20in%20werken%20bij%20KISS%20%28website%2C%20werken%20bij%29" data-event="rec_whatsapp_click" data-location="hero" rel="noopener" target="_blank" aria-label="App ons via WhatsApp (opent WhatsApp)">App ons</a>
-          <a class="btn btn--secondary" href="../vacatures/sales-agent-b2c/" data-event="rec_cta_click" data-location="hero">Bekijk de vacature</a>
         </div>
         <ul class="c-trustbar__list">
           <li>Geen saleservaring vereist</li>
@@ -76,7 +75,7 @@
           <li>Trainingsweek: je belt al zelf, met begeleiding</li>
           <li>Rijswijk, tram en bus voor de deur</li>
           <li>4,0 van 5 op Indeed (20 beoordelingen)</li>
-          <li>Tot €21 bruto per uur</li>
+          <li>Tot €21 bruto per uur, inclusief bonus</li>
         </ul>
       </div>
     </div>
@@ -112,9 +111,10 @@
         <p class="small">Vier korte vragen. De rest is optioneel.</p>
         <div class="c-field"><label for="voornaam">Voornaam</label><input class="c-input" id="voornaam" name="voornaam" type="text" autocomplete="given-name" required aria-describedby="voornaam-fout" data-msg-required="Vul je voornaam in."><p class="c-field__error" id="voornaam-fout"></p></div>
         <div class="c-field"><label for="telefoon">Telefoonnummer</label><p class="c-field__hint" id="telefoon-hint">Hierop bellen we je.</p><input class="c-input" id="telefoon" name="telefoon" type="tel" inputmode="tel" autocomplete="tel" placeholder="06 12345678" required aria-describedby="telefoon-hint telefoon-fout" data-msg-required="Vul je telefoonnummer in." data-msg-invalid="Vul een telefoonnummer in van minimaal 10 cijfers."><p class="c-field__error" id="telefoon-fout"></p></div>
+        <div class="c-field"><label for="email"><span class="nowrap">E-mailadres</span> <span class="c-field__opt">(optioneel, voor een bevestiging)</span></label><input class="c-input" id="email" name="email" type="email" autocomplete="email" placeholder="naam@voorbeeld.nl" aria-describedby="email-fout" data-msg-invalid="Dit e-mailadres lijkt niet te kloppen. Controleer op een @ en een punt."><p class="c-field__error" id="email-fout"></p></div>
         <fieldset class="c-field" id="uren" data-required data-msg-required="Kies hoeveel uur je per week kunt werken." aria-describedby="uren-hint uren-fout">
           <legend data-label="Uren per week">Hoeveel uur per week kun je werken?</legend>
-          <p class="c-field__hint" id="uren-hint">De functie is voor minimaal 24 uur per week. Kun je minder, kies dan „Minder dan 24 uur”. Dan bekijken we je reactie apart.</p>
+          <p class="c-field__hint" id="uren-hint">De functie is voor minimaal 24 uur per week. Kun je minder, dan past deze functie nu niet.</p>
           <div class="c-choice"><input type="radio" id="uren-2" name="uren" value="24-32"><label for="uren-2">24 tot 32 uur</label></div>
           <div class="c-choice"><input type="radio" id="uren-3" name="uren" value="32-40"><label for="uren-3">32 tot 40 uur</label></div>
           <div class="c-choice"><input type="radio" id="uren-1" name="uren" value="&lt;24"><label for="uren-1">Minder dan 24 uur</label></div>
@@ -134,7 +134,6 @@
           <summary>Meer over jezelf vertellen (optioneel)</summary>
           <div class="c-form">
             <div class="c-field"><label for="achternaam">Achternaam <span class="c-field__opt">(optioneel)</span></label><input class="c-input" id="achternaam" name="achternaam" type="text" autocomplete="family-name" aria-describedby="achternaam-fout"><p class="c-field__error" id="achternaam-fout"></p></div>
-            <div class="c-field"><label for="email"><span class="nowrap">E-mailadres</span> <span class="c-field__opt">(optioneel)</span></label><p class="c-field__hint" id="email-hint">Vul je dit in, dan krijg je een bevestiging per mail.</p><input class="c-input" id="email" name="email" type="email" autocomplete="email" placeholder="naam@voorbeeld.nl" aria-describedby="email-hint email-fout" data-msg-invalid="Dit e-mailadres lijkt niet te kloppen. Controleer op een @ en een punt."><p class="c-field__error" id="email-fout"></p></div>
             <div class="c-field">
               <label for="start">Wanneer kun je starten? <span class="c-field__opt">(optioneel)</span></label>
               <select class="c-input" id="start" name="start"><option value="">Maak een keuze</option><option>Zo snel mogelijk</option><option>Binnen een maand</option><option>Later</option><option>Weet ik nog niet</option></select>
@@ -153,7 +152,7 @@
         <input type="hidden" name="ts" value="">
 
         <button class="btn btn--recruit" type="submit">Verstuur, wij bellen je</button>
-        <p class="small">In de regel bellen we je binnen twee werkdagen. Geen <span class="nowrap">e-mailadres</span> ingevuld? Dan hoor je alles van ons telefonisch, ook als het niet doorgaat. We gebruiken je gegevens alleen voor deze sollicitatie. <a href="../privacy/">Lees hoe</a></p>
+        <p class="small">We bellen je vanaf +31&nbsp;70&nbsp;207&nbsp;94&nbsp;95. <a href="../assets/kiss-recruitment.vcf" download="kiss-recruitment.vcf" data-event="rec_save_contact_click" data-location="form">Sla dat nummer op</a>, dan herken je ons. Geen <span class="nowrap">e-mailadres</span> ingevuld? Dan hoor je alles van ons telefonisch, ook als het niet doorgaat. We gebruiken je gegevens alleen voor deze sollicitatie. <a href="../privacy/">Lees hoe</a></p>
       </form>
       </div>
     </div>
@@ -189,7 +188,7 @@
         <p>KISS staat voor Keep It Short &amp; Simple. Zo werken we ook: duidelijke afspraken, een vaste aanpak en korte lijnen.</p>
       </div>
       <ul class="c-features c-features--2">
-        <li><h3>Een goed salaris</h3><p>Voor de functie sales agent B2C tot €21 bruto per uur. Wat jij precies verdient, rekenen we voor in het eerste telefoongesprek, zonder kleine lettertjes.</p></li>
+        <li><h3>Een goed salaris</h3><p>Tot €21 bruto per uur, inclusief bonus. Je uurloon hangt af van je leeftijd. Bij sommige projecten verdien je een extra bonus; dat leggen we je uit in het gesprek.</p></li>
         <li><h3>Je stelt zelf je rooster samen</h3><p>Drie diensten per dag: ochtend, middag en avond. Ook op zaterdag zijn wij open. Je kiest zelf welke diensten je werkt.</p></li>
         <li><h3>Training en coaching</h3><p>Je begint met een trainingsweek en daarna houdt het niet op. Je supervisor luistert mee, bespreekt je gesprekken en coacht je verder.</p></li>
         <li><h3>Een informele sfeer</h3><p>Korte lijnen, collega's van alle leeftijden en een vloer waar je makkelijk iets kunt vragen. Serieus over het werk, ontspannen met elkaar.</p></li>
@@ -207,10 +206,9 @@
       <ol class="c-steps">
         <li><h3>Je reageert</h3><p>Voornaam, telefoonnummer, hoeveel uur je kunt werken en of je 18 bent. Geen cv, geen brief. Of app ons.</p></li>
         <li><h3>Wij bellen je</h3><p>In de regel binnen twee werkdagen. Een eerste kennismaking: wie ben je, wat zoek je, welke mogelijkheden zijn er binnen KISS.</p></li>
-        <li><h3>Persoonlijk gesprek op kantoor</h3><p>Klikt het aan de telefoon, dan nodigen wij je uit in Rijswijk. Je ziet de vloer en je hoort precies wat het werk inhoudt, voordat je ja zegt.</p></li>
+        <li><h3>Kennismaking op kantoor</h3><p>Klikt het aan de telefoon, dan nodigen wij je uit voor een kennismaking op kantoor in Rijswijk. Je ziet de vloer en hoort precies wat het werk inhoudt.</p></li>
         <li><h3>Selectie voor de trainingsweek</h3><p>Na dat gesprek beslissen wij of we je uitnodigen voor de trainingsweek. Niet iedereen stroomt door.</p></li>
       </ol>
-      <p class="mt-6 small">Liever direct bellen? <a href="tel:+31624524744" data-event="rec_phone_click" data-location="direct">Bel&nbsp;+31&nbsp;6&nbsp;24&nbsp;52&nbsp;47&nbsp;44</a>, maandag t/m vrijdag van 09:00 tot 17:00.</p>
     </div>
   </section>
 
@@ -305,7 +303,7 @@
           <p class="c-card__more">Bekijk en solliciteer</p>
         </li>
       </ul>
-      <p class="mt-6">Andere functie in gedachten? <a class="link link--arrow" href="../solliciteren/">Solliciteer open</a></p>
+      <p class="mt-6">Andere functie in gedachten? <a class="link link--arrow" href="../solliciteren/">Open sollicitatie</a></p>
     </div>
   </section>
 
@@ -317,14 +315,14 @@
       <div class="c-faq">
         <details><summary><h3>Heb ik ervaring nodig?</h3><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6"/></svg></summary><div><p>Nee. Je begint met een trainingsweek. Daarin leer je het vak en bel je al zelf, met begeleiding. Wat je wel meebrengt: goed en duidelijk Nederlands, zin om te bellen en de bereidheid om te leren van feedback.</p></div></details>
         <details><summary><h3>Zijn er targets?</h3><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6"/></svg></summary><div><p>Ja. Per campagne is duidelijk wat een goede dag is. Je supervisor bespreekt je cijfers met je en luistert gesprekken terug om te zien waar het beter kan. Targets zijn er om je beter te maken, niet om je af te rekenen.</p></div></details>
-        <details><summary><h3>Wat verdien ik?</h3><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6"/></svg></summary><div><p>Als sales agent B2C tot €21 bruto per uur, afhankelijk van je leeftijd. Bij een deel van de campagnes is er een bonusregeling. Die verschilt per campagne.</p></div></details>
+        <details><summary><h3>Wat verdien ik?</h3><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6"/></svg></summary><div><p>Tot €21 bruto per uur, inclusief bonus. Je uurloon hangt af van je leeftijd. Bij sommige projecten verdien je een extra bonus; dat leggen we je uit in het gesprek.</p></div></details>
         <details><summary><h3>Krijg ik reiskosten vergoed?</h3><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6"/></svg></summary><div><p>Ja. Woon je verder dan 10 kilometer van kantoor, dan krijg je €0,23 per kilometer.</p></div></details>
         <details><summary><h3>Wat voor contract krijg ik?</h3><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6"/></svg></summary><div><p>Je start met een oproepcontract of een tijdelijk contract, met uitzicht op een vaste aanstelling.</p></div></details>
         <details><summary><h3>Hoeveel uur moet ik minimaal werken?</h3><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6"/></svg></summary><div><p>Minimaal 24 uur per week. Meer mag.</p></div></details>
-        <details><summary><h3>Kan ik thuiswerken?</h3><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6"/></svg></summary><div><p>Je werkt op ons kantoor in Rijswijk. Hybride werken kan soms, onder voorwaarden. Dat bespreken we in de kennismaking.</p></div></details>
-        <details><summary><h3>Hoe verloopt de sollicitatie?</h3><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6"/></svg></summary><div><p>In de regel bellen wij je binnen twee werkdagen nadat je hebt gereageerd. Klikt het, dan volgt een persoonlijk gesprek op kantoor. Daarna hoor je of we je uitnodigen voor de trainingsweek.</p></div></details>
-        <details><summary><h3>Voor wie bel ik?</h3><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6"/></svg></summary><div><p>Voor Nederlandse uitgevers, loterijen, goede doelen en abonnementsmerken. Je hoort in het kennismakingsgesprek voor welke campagnes je start.</p></div></details>
-        <details><summary><h3>Word ik altijd uitgenodigd voor de trainingsweek?</h3><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6"/></svg></summary><div><p>Nee. Na het persoonlijke gesprek op kantoor beslissen wij of we je uitnodigen. Wij nemen het vak serieus en selecteren daarop.</p></div></details>
+        <details><summary><h3>Kan ik thuiswerken?</h3><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6"/></svg></summary><div><p>De eerste periode werk je volledig op kantoor in Rijswijk. Later kan thuiswerken soms in overleg.</p></div></details>
+        <details><summary><h3>Hoe verloopt de sollicitatie?</h3><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6"/></svg></summary><div><p>In de regel bellen wij je binnen twee werkdagen nadat je hebt gereageerd. Klikt het, dan volgt een kennismaking op kantoor. Daarna hoor je of we je uitnodigen voor de trainingsweek.</p></div></details>
+        <details><summary><h3>Voor wie bel ik?</h3><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6"/></svg></summary><div><p>Voor Nederlandse uitgevers, loterijen, goede doelen en abonnementsmerken. Je hoort bij de kennismaking op kantoor voor welke campagnes je start.</p></div></details>
+        <details><summary><h3>Word ik altijd uitgenodigd voor de trainingsweek?</h3><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M6 9l6 6 6-6"/></svg></summary><div><p>Nee. Na de kennismaking op kantoor beslissen wij of we je uitnodigen. Wij nemen het vak serieus en selecteren daarop.</p></div></details>
       </div>
     </div>
   </section>
@@ -333,7 +331,7 @@
     <div class="container c-cta__grid">
       <div>
         <h2>Klaar om te beginnen?</h2>
-        <p>Geen cv nodig. In de regel bellen wij je binnen twee werkdagen. Bellen kan maandag t/m vrijdag van 09:00 tot 17:00.</p>
+        <p>Geen cv nodig. Vragen? Bel ons op werkdagen van 09:00 tot 17:00.</p>
       </div>
       <div class="c-cta__actions">
         <a class="btn btn--recruit" href="#solliciteren" data-event="rec_cta_click" data-location="band">Solliciteer in 1 minuut</a>
@@ -382,7 +380,6 @@
           <li><a href="./">Werken bij</a></li>
           <li><a href="training-en-ontwikkeling/">Training &amp; ontwikkeling</a></li>
           <li><a href="../vacatures/">Vacatures</a></li>
-          <li><a href="../solliciteren/">Solliciteren</a></li>
         </ul>
       </div>
       <div class="c-footer__col">

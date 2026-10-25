@@ -70,7 +70,7 @@
           <a class="btn btn--secondary btn--whatsapp" href="https://wa.me/31613702654?text=Hoi%21%20Ik%20heb%20interesse%20in%20werken%20bij%20KISS%20%28website%2C%20home%29" data-event="rec_whatsapp_click" data-location="hero" rel="noopener" target="_blank" aria-label="App ons via WhatsApp (opent WhatsApp)">App ons</a>
         </div>
         <ul class="c-trustbar__list">
-          <li>Tot €21 bruto per uur</li>
+          <li>Tot €21 bruto per uur, inclusief bonus</li>
           <li>Geen saleservaring vereist</li>
           <li>Trainingsweek: je belt al zelf, met begeleiding</li>
           <li>Rijswijk, tram en bus voor de deur</li>
@@ -106,9 +106,10 @@
         <p class="small">Vier korte vragen. De rest is optioneel.</p>
         <div class="c-field"><label for="voornaam">Voornaam</label><input class="c-input" id="voornaam" name="voornaam" type="text" autocomplete="given-name" required aria-describedby="voornaam-fout" data-msg-required="Vul je voornaam in."><p class="c-field__error" id="voornaam-fout"></p></div>
         <div class="c-field"><label for="telefoon">Telefoonnummer</label><p class="c-field__hint" id="telefoon-hint">Hierop bellen we je.</p><input class="c-input" id="telefoon" name="telefoon" type="tel" inputmode="tel" autocomplete="tel" placeholder="06 12345678" required aria-describedby="telefoon-hint telefoon-fout" data-msg-required="Vul je telefoonnummer in." data-msg-invalid="Vul een telefoonnummer in van minimaal 10 cijfers."><p class="c-field__error" id="telefoon-fout"></p></div>
+        <div class="c-field"><label for="email"><span class="nowrap">E-mailadres</span> <span class="c-field__opt">(optioneel, voor een bevestiging)</span></label><input class="c-input" id="email" name="email" type="email" autocomplete="email" placeholder="naam@voorbeeld.nl" aria-describedby="email-fout" data-msg-invalid="Dit e-mailadres lijkt niet te kloppen. Controleer op een @ en een punt."><p class="c-field__error" id="email-fout"></p></div>
         <fieldset class="c-field" id="uren" data-required data-msg-required="Kies hoeveel uur je per week kunt werken." aria-describedby="uren-hint uren-fout">
           <legend data-label="Uren per week">Hoeveel uur per week kun je werken?</legend>
-          <p class="c-field__hint" id="uren-hint">De functie is voor minimaal 24 uur per week. Kun je minder, kies dan „Minder dan 24 uur”. Dan bekijken we je reactie apart.</p>
+          <p class="c-field__hint" id="uren-hint">De functie is voor minimaal 24 uur per week. Kun je minder, dan past deze functie nu niet.</p>
           <div class="c-choice"><input type="radio" id="uren-2" name="uren" value="24-32"><label for="uren-2">24 tot 32 uur</label></div>
           <div class="c-choice"><input type="radio" id="uren-3" name="uren" value="32-40"><label for="uren-3">32 tot 40 uur</label></div>
           <div class="c-choice"><input type="radio" id="uren-1" name="uren" value="&lt;24"><label for="uren-1">Minder dan 24 uur</label></div>
@@ -128,7 +129,6 @@
           <summary>Meer over jezelf vertellen (optioneel)</summary>
           <div class="c-form">
             <div class="c-field"><label for="achternaam">Achternaam <span class="c-field__opt">(optioneel)</span></label><input class="c-input" id="achternaam" name="achternaam" type="text" autocomplete="family-name" aria-describedby="achternaam-fout"><p class="c-field__error" id="achternaam-fout"></p></div>
-            <div class="c-field"><label for="email"><span class="nowrap">E-mailadres</span> <span class="c-field__opt">(optioneel)</span></label><p class="c-field__hint" id="email-hint">Vul je dit in, dan krijg je een bevestiging per mail.</p><input class="c-input" id="email" name="email" type="email" autocomplete="email" placeholder="naam@voorbeeld.nl" aria-describedby="email-hint email-fout" data-msg-invalid="Dit e-mailadres lijkt niet te kloppen. Controleer op een @ en een punt."><p class="c-field__error" id="email-fout"></p></div>
             <div class="c-field">
               <label for="start">Wanneer kun je starten? <span class="c-field__opt">(optioneel)</span></label>
               <select class="c-input" id="start" name="start"><option value="">Maak een keuze</option><option>Zo snel mogelijk</option><option>Binnen een maand</option><option>Later</option><option>Weet ik nog niet</option></select>
@@ -147,7 +147,7 @@
         <input type="hidden" name="ts" value="">
 
         <button class="btn btn--recruit" type="submit">Verstuur, wij bellen je</button>
-        <p class="small">In de regel bellen we je binnen twee werkdagen. Geen <span class="nowrap">e-mailadres</span> ingevuld? Dan hoor je alles van ons telefonisch, ook als het niet doorgaat. We gebruiken je gegevens alleen voor deze sollicitatie. <a href="privacy/">Lees hoe</a></p>
+        <p class="small">We bellen je vanaf +31&nbsp;70&nbsp;207&nbsp;94&nbsp;95. <a href="assets/kiss-recruitment.vcf" download="kiss-recruitment.vcf" data-event="rec_save_contact_click" data-location="form">Sla dat nummer op</a>, dan herken je ons. Geen <span class="nowrap">e-mailadres</span> ingevuld? Dan hoor je alles van ons telefonisch, ook als het niet doorgaat. We gebruiken je gegevens alleen voor deze sollicitatie. <a href="privacy/">Lees hoe</a></p>
       </form>
       </div>
     </div>
@@ -160,7 +160,7 @@
       </div>
       <ol class="c-steps">
         <li><h3>Wij bellen je</h3><p>In de regel binnen twee werkdagen. Een eerste kennismaking: wie ben je, wat zoek je, welke mogelijkheden zijn er binnen KISS.</p></li>
-        <li><h3>Persoonlijk gesprek op kantoor</h3><p>Klikt het aan de telefoon, dan nodigen wij je uit in Rijswijk. Je ziet de vloer en je hoort precies wat het werk inhoudt, voordat je ja zegt.</p></li>
+        <li><h3>Kennismaking op kantoor</h3><p>Klikt het aan de telefoon, dan nodigen wij je uit voor een kennismaking op kantoor in Rijswijk. Je ziet de vloer en hoort precies wat het werk inhoudt.</p></li>
         <li><h3>Je hoort of je mee mag doen</h3><p>Na het gesprek laten we je weten of we je uitnodigen voor de trainingsweek. Niet iedereen stroomt door.</p></li>
         <li><h3>De trainingsweek</h3><p>Je leert het vak en belt al zelf, met begeleiding. Na die week draai je mee in het team.</p></li>
       </ol>
@@ -174,7 +174,7 @@
         <p>KISS staat voor Keep It Short &amp; Simple. Zo werken we ook: duidelijke afspraken, een vaste aanpak en korte lijnen.</p>
       </div>
       <ul class="c-features c-features--2">
-        <li><h3>Een goed salaris</h3><p>Als sales agent B2C tot €21 bruto per uur, afhankelijk van je leeftijd. Bij een deel van de campagnes is er een bonusregeling.</p></li>
+        <li><h3>Een goed salaris</h3><p>Tot €21 bruto per uur, inclusief bonus. Je uurloon hangt af van je leeftijd. Bij sommige projecten verdien je een extra bonus; dat leggen we je uit in het gesprek.</p></li>
         <li><h3>Je stelt zelf je rooster samen</h3><p>Drie diensten per dag: ochtend, middag en avond. Ook op zaterdag zijn wij open. Je kiest zelf welke diensten je werkt.</p></li>
         <li><h3>Training en coaching</h3><p>Je begint met een trainingsweek en daarna houdt het niet op. Je supervisor luistert mee, bespreekt je gesprekken en coacht je verder.</p></li>
         <li><h3>Goed bereikbaar</h3><p>Laan van Oversteen 20 in Rijswijk. Tram en bus stoppen voor de deur en parkeren is gratis. Woon je verder dan 10 kilometer weg, dan krijg je €0,23 per kilometer reiskosten.</p></li>
@@ -201,7 +201,7 @@
     <div class="container c-cta__grid">
       <div>
         <h2>Klaar om te beginnen?</h2>
-        <p>Geen cv nodig. In de regel bellen wij je binnen twee werkdagen. Bellen kan maandag t/m vrijdag van 09:00 tot 17:00.</p>
+        <p>Geen cv nodig. Vragen? Bel ons op werkdagen van 09:00 tot 17:00.</p>
       </div>
       <div class="c-cta__actions">
         <a class="btn btn--recruit" href="#solliciteren" data-event="rec_cta_click" data-location="band">Solliciteer in 1 minuut</a>
@@ -250,7 +250,6 @@
           <li><a href="werken-bij/">Werken bij</a></li>
           <li><a href="werken-bij/training-en-ontwikkeling/">Training &amp; ontwikkeling</a></li>
           <li><a href="vacatures/">Vacatures</a></li>
-          <li><a href="solliciteren/">Solliciteren</a></li>
         </ul>
       </div>
       <div class="c-footer__col">
