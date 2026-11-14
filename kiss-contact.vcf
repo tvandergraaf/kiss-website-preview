@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//KISS marketing & sales//website//NL
+N:;;;;
+FN:KISS marketing & sales
+ORG:KISS marketing & sales
+X-ABShowAs:COMPANY
+TEL;TYPE=WORK,VOICE:+31702079495
+URL:https://kiss-marketingsales.nl
+END:VCARD

@@ -1,12 +1,10 @@
 BEGIN:VCARD
 VERSION:3.0
-FN:KISS recruitment
-N:;KISS recruitment;;;
+PRODID:-//KISS marketing & sales//website//NL
+N:;;;;
+FN:KISS marketing & sales
 ORG:KISS marketing & sales
+X-ABShowAs:COMPANY
 TEL;TYPE=WORK,VOICE:+31702079495
-TEL;TYPE=WORK,CELL:+31624524744
-item1.TEL;TYPE=CELL:+31613702654
-item1.X-ABLabel:WhatsApp
-EMAIL;TYPE=WORK:werken@kiss-marketingsales.nl
-URL:https://kiss-marketingsales.nl/werken-bij/
+URL:https://kiss-marketingsales.nl
 END:VCARD
